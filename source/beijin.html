@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>北京</title>
+    <link rel="stylesheet" href="css2.css" type="text/css">
+    <style>
+        body {
+    background-image: url("https://www.tripsavvy.com/thmb/L4R1vf6Y-G4ppPgfxHKw4BA2dc8=/2121x1414/filters:fill(auto,1)/GettyImages-4894349271-59e8e9a8d088c000119103c6.jpg");
+    background-size:cover; 
+    background-attachment:fixed;
+  };
+  #daohang{
+        position:absolute;/*绝对布局*/
+        top: 0%;
+        left: 0%;
+        padding-top: 0px;
+        width: 100%;
+        height: 60px;
+        background-color: rgba(136, 192, 244, 0.573)
+    }
+    ul{/*设置导航栏的框框*/
+        margin: auto;/*框框整体的位置，auto控制的是左右距离为自动调节*/
+        width: 50%;/*框框的长度*/
+        height: 35px;/*框框的宽度*/
+    }
+    li{
+        list-style-type: none;/* 去掉li前的点 */
+        float: left;/*将li设置成做浮动，变为联动*/
+    }
+    .a{
+        display: block;/*将超链接变成块状*/
+        width: 100px;/*设置块的长度*/
+        height: 60px;/*设置块的宽度*/
+        line-height: 60px;/*设置字体在块中的高度*/
+        color: #fff;/*设置字体颜色*/
+        text-align: center;/*字体居中*/
+        text-decoration: none;/*去掉下划线*/
+        font-size: 15px;/*设置字体大小*/
+    }
+    a:hover{
+        background-color: rgba(0, 183, 255, 0.699);
+        border-radius:10px;
+    }
+    select {
+        border-radius:10px;
+        border: #090808;
+        border-style: groove;
+        font-family: 华文新魏;
+        font-size: 16.5px;
+    }
+    select:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+    }
+    .container {
+        position: fixed;
+        background: linear-gradient(135deg, rgb(179, 208, 253) 0%, rgb(164, 202, 248) 100%);
+        border-radius: 1000px;
+        padding: 5px;
+        display: grid;
+        place-content: center;
+        z-index: 0;
+        max-width: 150px;
+        margin: 0 0px;
+        top:8px;
+        right:10px;
+    }
+    .search-container {
+        position: relative;
+        width: 93%;
+        border-radius: 50px;
+        background: linear-gradient(135deg, rgb(218, 232, 247) 0%, rgb(214, 229, 247) 100%);
+        padding: 5px;
+        display: flex;
+        align-items: center;
+    }
+    .input {
+        padding: 3px;
+        width: 100%;
+        background: linear-gradient(135deg, rgb(218, 232, 247) 0%, rgb(214, 229, 247) 100%);
+        border: none;
+        color: #9ebcd9;
+        font-size: 15px;
+        border-radius: 50px;
+    }
+    .a_center {
+        margin-top: 80px;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <div id="daohang">
+        <ul>
+            <li><a href="shouye.html" class="a">首页</a></li>
+            <li><a class="a">查找省市</a></li>
+            <li><a href="https://www.booking.com/index.zh-cn.html" class="a">酒店预订</a></li>
+            <li><a href="china.html" class="a">了解中国</a></li>
+            <li><a href="taolun.html" class="a">参与讨论</a></li>
+            <li><a class="a" href="xiaozu.html">小组成员</a></li>
+        </ul>
+        <div class="container">
+            <div class="search-container">
+                <form action="https://www.bing.com/search" method="get">
+                    <input type="text" id="search" class="input" type="text" placeholder="搜索景点" name="q" />
+                    </form>
+                <svg viewBox="0 0 24 24" class="search__icon">
+                    <g>
+                        <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                        </path>
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="a_center">
+    <h1>北京旅游景点</h1>
+    <hr style="border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));">
+    <br>
+    
+    <select class="select" name="pageselect" onchange="self.location.href=options[selectedIndex].value" >
+        <option selected>北京</option>
+        <option value="hubei.html">湖北</option>
+        <option value="hebei.html">河北</option>
+        <option value="shandong.html">山东</option>
+        <option value="liaoning.html">辽宁</option>
+        <option value="heilongjiang.html">黑龙江</option>
+        <option value="jilin.html">吉林</option>
+        <option value="gansu.html">甘肃</option>
+        <option value="qinghai.html">青海</option>
+        <option value="henan.html">河南</option>
+        <option value="jiangsu.html">江苏</option>
+        <option value="jiangxi.html">江西</option>
+        <option value="zhejiang.html">浙江</option>
+        <option value="guangdong.html">广东</option>
+        <option value="sichuan.html">四川</option>
+        <option value="fujian.html">福建</option>
+        <option value="taiwan.html">台湾</option>
+        <option value="hainan.html">海南</option>
+        <option value="shanxi.html">山西</option>
+        <option value="shanxi2.html">陕西</option>
+        <option value="hunan.html">湖南</option>
+        <option value="yunnan.html">云南</option>
+        <option value="guizhou.html">贵州</option>
+        <option value="anhui.html">安徽</option>
+        <option value="chongqing.html">重庆</option>
+        <option value="shanghai.html">上海</option>
+        <option value="tianjing.html">天津</option>
+        <option value="hongkong.html">香港</option>
+        <option value="macao.html">澳门</option>
+    </select>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="beijin0.html"><button type="submit" class="button">搜索景点</button></a>
+    
+    <div style="margin-top: 30px; background-color: rgba(255,255,255,0.7); padding: 20px; border-radius: 15px; width: 80%; margin-left: auto; margin-right: auto;">
+        <h2>北京简介</h2>
+        <p style="text-indent: 2em; line-height: 1.6;">北京，中华人民共和国首都，是一座具有三千余年建城史、八百六十余年建都史的历史文化名城，是世界著名古都和现代化国际城市。作为中国的政治、文化、国际交往和科技创新中心，北京拥有众多历史文化景观和现代化建筑。</p>
+        
+        <h3>著名景点</h3>
+        <ul style="list-style-type: circle; margin-left: 2em;">
+            <li>故宫 - 世界上现存规模最大、保存最为完整的木质结构古建筑之一</li>
+            <li>长城 - 世界七大奇迹之一，中国古代伟大的防御工程</li>
+            <li>天安门广场 - 世界上最大的城市中心广场</li>
+            <li>颐和园 - 中国现存规模最大、保存最完整的皇家园林</li>
+            <li>天坛 - 明清两代帝王祭天的场所</li>
+        </ul>
+    </div>
+    </div>
+</body>
+</html>
