@@ -1,0 +1,24 @@
+# 操作系统生成的文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 编辑器临时文件
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 大型媒体文件，这些文件应当通过其他方式获取
+*.mp4
+*.mp3
+*.avi
+*.mov
+*.wav
+*.flac
+
+# 日志文件
+*.log
+
+# 如果您需要包含特定媒体文件，可以使用 !filename 格式进行排除
+# 例如：!important.mp3
