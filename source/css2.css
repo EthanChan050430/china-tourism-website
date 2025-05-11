@@ -1,4 +1,3 @@
-/* filepath: source/css2.css */
 .button {
   margin: 8px;
   width: 120px;
@@ -99,4 +98,14 @@ a {
     margin-top: 450px;
     list-style: none;
     top:0;left:0;
+}
+#max ol li {
+    width: 25px;
+    height: 10px;
+    font-size: 15px;
+    line-height: 20px;
+    float: left;
+    text-align: center;
+    border-radius: 2em;
+    border: 5px solid #999999;
 }
