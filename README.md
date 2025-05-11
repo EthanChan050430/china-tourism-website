@@ -22,3 +22,15 @@
 - 响应式设计
 - 玻璃态UI
 - 各省份旅游资源展示
+
+## 媒体文件
+
+本项目需要一些媒体文件才能完整运行。由于GitHub对大文件的上传限制，请参阅 [media-files.md](media-files.md) 文件，了解如何获取这些媒体文件。
+
+## 预览
+
+您可以通过访问 [GitHub Pages链接](https://ethanchan050430.github.io/china-tourism-website/) 来在线预览这个网站。
+
+## 贡献
+
+欢迎通过Pull Request或Issues提交您的建议和改进。
